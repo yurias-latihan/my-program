@@ -4,103 +4,100 @@
     font-weight: normal;
 }
 
-/* --------------------------------- */
 body {
-    font-size: 12px;
-    background-color: lightskyblue;
-    color: salmon;
+    font: 16px/20px arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
 }
 
-/* --------------------------------- */
 .container {
-    background-color: white;
-    width: 1000px;
-    margin: 0 auto;
-    border: 1px solid black;
+    width: 960px;
+    margin: auto;
+    background-color: #fff;
 }
 
-/* --------------------------------- */
 .header {
     padding: 20px;
 }
 
-.header h1 {
-    font-weight: bolder;
-    margin-bottom: 5px;
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .header ul li {
     display: inline-block;
-    margin-right: 5px;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
 .header a {
-    color: salmon;
     text-decoration: none;
+    color: salmon;
+    padding: 3px;
 }
 
 .header a:hover {
-    color: lightskyblue;
-    text-decoration: underline;
+    background-color: lightskyblue;
+    color: white;
 }
 
-.header a:active {
-    color: red;;
-}
-
-/* header a:visited {
-    color: blue;
-} */
-
-/* --------------------------------- */
-.nav {
-    height: 300px;
+.hero {
+    height: 280px;
     background-image: url(image.jpeg);
     background-size: cover;
-    background-position: 0 -30px;
-    border-top: 5px solid salmon;
     border-bottom: 5px solid lightskyblue;
+    border-top: 5px solid salmon;
 }
 
-
-.article .main {
-    width: 500px;   
+.main {
+    width: 600px;
     padding: 20px;
-    text-align: justify;
     box-sizing: border-box;
     float: left;
 }
 
-.article .main p {
-    color: red;
+.main h2 {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.article .aside {
-    width: 300px;
-    padding: 20px;
-    text-align: justify;
-    box-sizing: border-box;
+.main .penulis {
+    font-size: 11px;
+    margin-top: -5px;
 }
 
+.main .penulis a {
+    color: salmon;
+    text-decoration: none;
+}
+
+.main p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
 
 .footer {
-    padding: 20px;
-    text-align: center;
-    background-color: black;
-    color: white;
+    background-color: #333;
+    padding: 10px;
 }
 
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
 
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
 
-
-
-
-
-
-
-
-
-/* clear float */
-.clear1 {
+.cf:after {
     clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
